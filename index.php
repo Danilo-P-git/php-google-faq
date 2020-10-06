@@ -50,17 +50,46 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
+    <header>
+      <div class="container-large">
+
+
+      <div class="logo">
+        <img src="img\logo.png" alt="">
+        <h1>Privacy e termini</h1>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li> <a href="#">Introduzione</a> </li>
+          <li><a href="#">Norme sulla privacy</a></li>
+          <li><a href="#">Termini di servizio</a></li>
+          <li><a href="#">Tecnologie</a></li>
+          <li><a href="#">Domande frequenti</a></li>
+
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container-medium">
+
+
 
       <?php foreach ($faqs as $faq) {?>
-      <h2>
+      <h2 class="question">
       <?php echo $faq["domanda"] ?>
       </h2>
-      <p>
+      <p class="answer">
       <?php echo $faq["risposta"]  ?>
       </p>
     <?php } ?>
+    </div>
 
+
+    </main>
   </body>
 </html>
